@@ -30,3 +30,26 @@ exportfs -a
 ```
 
 ## [Create PV]
+- Step1 Fill up the yaml and save as pv.yaml.
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata: 
+  name: <PersistentVolume Name>
+spec: 
+  capacity: 
+    storage: <Storage Size>Gi
+  accessModes:
+  - <Access mode includes ReadWriteOnce/ReadOnlyMany/ReadWriteMany>
+  nfs: 
+    path: <Export Directory>
+    server: <Your NFS Server IP>
+ ```
+- Step2 Create it by oc command.
+```
+oc create -f pv.yaml.
+```
+- Step3 Check PV is created
+```
+oc get pv
+```
