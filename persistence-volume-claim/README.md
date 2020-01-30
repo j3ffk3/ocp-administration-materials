@@ -5,12 +5,12 @@
 - Access mode is **ReadWriteMany**
 - Request **5Gi** storage
 
-## How to claim it by oc command?
+## How to claim storage by oc command?
+try it!
 ```
 oc set volume dc/<DeploymentConfig> \
 --add --overwrite --name=<volume name in DeploymentConfig> -t pvc \
 --claim-name=example-pvc \
 --claim-size=5Gi \
 --claim-mode='ReadWriteMany'
-
 ```
