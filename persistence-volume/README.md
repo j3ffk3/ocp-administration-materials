@@ -21,7 +21,9 @@ vi /etc/exports.d/example.exports
 ```
 - Step4 Config expot file
 Paste the following text to export file.
+```
 /var/export/example *(rw,async,all_squash)
+```
 - Step5 export 
 ```
 exportfs -a 
