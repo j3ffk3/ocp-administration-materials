@@ -1,6 +1,6 @@
 # Persistence Volume
 
-## You can set up NFS by the following steps
+## **Prepare** set up NFS by the following steps
 ### Run Bash script **setup-nfs**
 ```
 ./setup-nfs <dirtory-name>
