@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata: 
+  name: compute-quota
+spec:
+  hard: 
+    cpu: 4
+    memory: 16Gi
+    requests.cpu: 2 
+    requests.memory: 8Gi 
+    limits.cpu: 4 
+    limits.memory: 16Gi 
